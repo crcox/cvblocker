@@ -10,9 +10,3 @@ Maintainer: Christopher R. Cox <chriscox@lsu.edu>
 Description: A vector of labels will be distributed over a specified number of groups such that the distributino of labels over groups is as balanced as possible.
 
 License: MIT
-
-Encoding: UTF-8
-
-LazyData: true
-
-RoxygenNote: 6.1.1
