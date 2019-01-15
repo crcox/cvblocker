@@ -21,10 +21,10 @@ y.num <- sample.int(3, size = 100, replace = TRUE)
 cv <- cvblocker(y.num, k = 6)
 
 y.char <- LETTERS[y.num]
-cv <- cvblocker(y.num, k = 6)
+cv <- cvblocker(y.char, k = 6)
 
 y.factor <- factor(y.num, levels = 1:3, labels = c("cow","duck","pig"))
-cv <- cvblocker(y.num, k = 6)
+cv <- cvblocker(y.factor, k = 6)
 ```
 
 Each time cvblocker runs, it will produce different assignments due to random assignment to groups. Set a random seed for reproducable results. Or, better yet, generate the cross validation blocks one time and save them to a file to be reloaded as needed.
