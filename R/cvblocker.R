@@ -33,6 +33,18 @@ cvblocker <- function(x, k) {
   print(M)
   return(blocks)
 }
+#' Build descriptive table of CV blocks
+#'
+#' @param x A vector of labels.
+#' @param blocks A vector of cv blocks.
+#' @return A matrix with a row for each cv block and a column for each condition label, along with margin totals and grand total.
+#' @examples
+#' x <- rep(c(0,1,2), c(49,949,874))
+#' x <- x[sample(length(x))]
+#' blocks <- cvblocker(x, k=10)
+#' M <- check_cvblocks(x, blocks)
+#' print(M)
+#' @export
 check_cvblocks <- function(x, blocks) {
   N <- length(x)
   u <- unique(sort(x))
