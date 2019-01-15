@@ -9,6 +9,7 @@
 #' blocks <- cvblocker(x, k=10)
 #' M <- check_cvblocks(x, blocks)
 #' print(M)
+#' @export
 cvblocker <- function(x, k) {
   N <- length(x)
   u <- unique(sort(x))
